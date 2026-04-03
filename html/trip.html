@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>โปรแกรมทริปบางเหรียง 2 วัน 1 คืน</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+body{
+font-family:'Prompt',sans-serif;
+background:#f6f9fb;
+}
+
+/* NAVBAR สีเดียวกับ Songkhla */
+
+.navbar{
+background:linear-gradient(90deg,#00897b,#26c6da);
+}
+
+/* HERO SLIDER */
+
+.hero-slide img{
+height:95vh;
+object-fit:cover;
+width:100%;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+background:rgba(0,0,0,0.35);
+padding:30px 40px;
+border-radius:10px;
+}
+
+.hero-text h1{
+font-size:45px;
+font-weight:700;
+}
+
+/* SECTION */
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+font-size:36px;
+font-weight:700;
+margin-bottom:40px;
+text-align:center;
+color:#00897b;
+}
+
+/* TIMELINE */
+
+.timeline{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CARD */
+
+.card{
+border:none;
+border-radius:15px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card img{
+height:230px;
+object-fit:cover;
+}
+
+/* FOOTER */
+
+.footer{
+background:#00897b;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand" href="Songkhla.html">หน้าหลัก</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="Songkhla.html">สงขลา</a></li>
+<li class="nav-item"><a class="nav-link" href="hatyai.html">หาดใหญ่</a></li>
+<li class="nav-item"><a class="nav-link" href="trip.html">ทริป2วัน1คืน</a></li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO SLIDER -->
+
+<div class="position-relative">
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner hero-slide">
+
+<div class="carousel-item active">
+<img src="picture/1.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="picture/2.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="picture/24.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="picture/ท่องเรือ.jpg" class="d-block w-100">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+<div class="hero-text">
+
+<h1>ชุมชนท่องเที่ยวบางเหรียง</h1>
+<h1> 2 วัน 1 คืน</h1>
+<p>สัมผัสวิถีชีวิตชุมชนและธรรมชาติริมทะเลสาบ</p>
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<div class="container" data-aos="fade-up">
+
+<h2 class="section-title">ชุมชนบางเหรียง</h2>
+
+<p class="text-center">
+
+ตั้งอยู่ที่ตำบลบางเหรียง อำเภอควนเนียง จังหวัดสงขลา เป็นชุมชนที่อยู่อาศัยริมคลองบางเหรียง เนื่องจากยังมีสภาพอาคารบ้านใต้ถุนสูงซึ่งเป็นรูปทรงอาคารบ้านเรือนในอดีตและประชาชนกลุ่มแรกที่มาตั้งถิ่นอาศัยเป็นคนไทยเชื้อสายจีน ที่มาทำมาค้าขายโดยการปลูกละมุด (สะหวา) ส้มโอ และพลู เพราะในสมัยก่อนนั้นประชาชนส่วนใหญ่นิยมกินหมากเป็นการต้อนรับแขกที่มาเยี่ยมบ้าน และในระยะต่อมาก็กลายมาเป็นสวนผักที่มีชื่อเสียง ในอดีตประชาชนในตำบลบางเหรียงได้ค้าขายโดยทางเรือไปมาหาสู่ค้าขายกับชุมชนบ้านเกาะยอ และเมื่อมีการก่อตั้งสถานีรถไฟก็มีการนำผักไปขายบนรถไฟโดยเริ่มต้นที่สถานีบ้านเกาะใหญ่ไปสิ้นสุดสถานีรถไฟหาดใหญ่และบางส่วนก็ไปสิ้นสุดที่สถานีรถไฟบ้านปากคลอง อำเภอควนขนุน จังหวัดพัทลุง และส่งสินค้าไปขายต่อที่จังหวัดตรัง ถ้าหากยังมีผักเหลือผู้ค้าก็จะนำผักไปขายบริเวณตลาดรถไฟ จนทำให้ผู้ที่เดินทางด้วยรถไฟรู้จักตำบลบางเหรียงเป็นอย่างดี 
+</p>
+
+</div>
+
+</section>
+<!-- CALENDAR SECTION -->
+
+<section class="section">
+
+<div class="container text-center">
+
+<h2 class="section-title">ปฏิทินการท่องเที่ยวบางเหรียง</h2>
+
+<p class="mb-4">แนะนำช่วงเวลาท่องเที่ยวและกิจกรรมเด่นตลอดทั้งปี</p>
+
+<img src="picture/calendar.png" class="img-fluid rounded shadow" alt="ปฏิทินการท่องเที่ยวบางเหรียง">
+
+</div>
+
+</section>
+
+
+<!-- GOOGLE MAP -->
+
+<section class="section bg-light">
+
+<div class="container">
+
+<h2 class="section-title">เส้นทาง หาดใหญ่ → บางเหรียง</h2>
+
+<iframe
+width="100%"
+height="450"
+style="border:0"
+loading="lazy"
+allowfullscreen
+src="https://www.google.com/maps?q=Hat%20Yai%20to%20Bang%20Ri%20ang%20Songkhla&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- PROGRAM -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">โปรแกรมการท่องเที่ยว</h2>
+
+<div class="row g-4">
+
+
+<!-- DAY 1 -->
+
+<div class="col-md-6">
+
+<div class="timeline">
+
+<h4>DAY 1</h4>
+
+<ul>
+<li>09:30 ออกเดินทางจากหาดใหญ่</li>
+<li>10:00 ต้อนรับโดยชุมชนบางเหรียง</li>
+<li>10:00-12:00 เช็คอินลงทะเบียนทำกิจกรรมและรับคูปองมื้อเที่ยง</li>
+<li>12:00-14:00 รับประทานอาหารเที่ยงตามร้านที่เข้าร่วมรายการในชุมชน</li>
+
+<li>14:00-17:00 ร่วมทำกิจกรรม
+<ul>
+<li>ทำสบู่น้ำมันธรรมชาติ</li>
+<li>ทำผ้า EcoPrint / มัดย้อม / บาติก</li>
+</ul>
+</li>
+
+<li>17:00 เข้าที่พักและพักผ่อนตามอัธยาศัย</li>
+<li>18:30 รับประทานอาหารค่ำ</li>
+<li>19:00 กิจกรรมลานดนตรี ร้านค้าของชุมชนและเครือข่าย</li>
+<li>22:00 จบกิจกรรม และแยกย้ายพักผ่อนตามอัธยาศัย</li>
+</ul>
+
+<img src="picture/ผ้ามัดย้อม.jpg" class="img-fluid rounded mt-3">
+
+</div>
+
+</div>
+
+
+<!-- DAY 2 -->
+
+<div class="col-md-6">
+
+<div class="timeline">
+
+<h4>DAY 2</h4>
+
+<ul>
+
+<li>06:00 กิจกรรมพายเรือ
+<ul>
+<li>พายเรือชมแมงกะพรุน</li>
+<li>ชมทะเลสาบและสันหลังมังกร</li>
+<li>ร่วมกันเก็บขยะภายในคลอง</li>
+</ul>
+</li>
+
+<li>08:00 รับประทานอาหารเช้า ณ ร้านน้ำชาลุงพร</li>
+<li>09:00 เยี่ยมชมสวนเกษตรปลอดสารพิษ</li>
+<li>10:00 เดินทางกลับที่พัก</li>
+<li>12:00 เช็คเอาท์เดินทางกลับหาดใหญ่</li>
+<p>***แมงกะพรุนจะเข้ามาในช่วงเดือนเมษายน-พฤษภาคม ปรากฏการณ์นี้จะคงอยู่ต่อไปอีกประมาณ 1-2 เดือน แต่อาจจะเร็วหรือช้ากว่านี้ขึ้นอยู่กับสภาพธรรมชาติและน้ำเค็มที่หนุนเข้ามาในคลอง***</p>
+</ul>
+
+<img src="picture/ล่องเรือ3.jpg" class="img-fluid rounded mt-3">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="section bg-light">
+
+<div class="container">
+
+<h2 class="section-title">ร้านอาหารท้องถิ่นแนะนำ</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=ร้านก๋วยเตี๋ยวไก่บ้าน+ป้าจัด+บางเหรียง" target="_blank">
+<img src="picture/ก๋วยเตี๋ยวไก่บ้าน.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>ร้านก๋วยเตี๋ยวไก่บ้าน ป้าจัด</h5>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=ร้านบ้านนายช่าง+บางเหรียง" target="_blank">
+<img src="picture/นายช่าง2.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>ร้านบ้านนายช่าง</h5>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=ร้านครัวออร่า+บางเหรียง" target="_blank">
+<img src="picture/ออร่า3.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>ร้านครัวออร่า</h5>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=ติ่มซำเย็นตาโฟพริกสด+บางเหรียง" target="_blank">
+<img src="picture/ล้านติ่มซำ1.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>ล้านติ่มซำ-เย็นตาโฟพริกสดบางเหรียง</h5>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=Good+Time+Cafe+Resort+บางเหรียง" target="_blank">
+<img src="picture/goodtime.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Good Time Cafe & Resort</h5>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=บ้านสวนอ้วนน้อย+บางเหรียง" target="_blank">
+<img src="picture/ขนำสเต็ก.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>ขนำสเต็กbyJP (บ้านสวนอ้วนน้อย)</h5>
+</div>
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">สถานที่ท่องเที่ยวในบางเหรียง</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=ฟาร์มทะเลบ้านโคกเมือง" target="_blank">
+<img src="picture/ฟาร์มทะเล.png" class="card-img-top">
+<div class="card-body text-center">
+<h5>ฟาร์มทะเลบ้านโคกเมือง</h5>
+<p>เรียนรู้การทำเกษตรแบบวิถีชุมชน</p>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=ขนมซั้งแม่ดวง100ปี ควนเนียง" target="_blank">
+<img src="picture/ขนมซั้ง3.png" class="card-img-top">
+<div class="card-body text-center">
+<h5>ขนมซั้งแม่ดวง 100ปี ควนเนียง</h5>
+<p>เรียนรู้ภูมิปัญญาท้องถิ่น</p>
+</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<a href="https://www.google.com/maps/search/?api=1&query=ผักกาดดองป้าละไม+บางเหรียง" target="_blank">
+<img src="picture/ผักกาดดอง2.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>ผักกาดดองป้าละไม</h5>
+<p>แหล่งเรียนรู้การแปรรูปอาหารพื้นบ้าน</p>
+</div>
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COMMUNITY PRODUCTS / OTOP -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">สินค้าชุมชนและสินค้า OTOP</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card">
+<img src="picture/สบู่2.jpg">
+<div class="card-body text-center">
+<h5>สบู่มีรัก</h5>
+<p>สบู่ที่ผลิตมาจากน้ำมันธรรมชาติ</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="picture/ไตปลาคั่วแห้ง.jpg">
+<div class="card-body text-center">
+<h5>ไตปลาคั่วแห้งอ้วนน้อย</h5>
+<p>รสมือคนชุมชนแท้ๆ เป็นผลิตภัณฑ์ชุมชน</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="picture/ขนมซั้ง6.jpg">
+<div class="card-body text-center">
+<h5>ขนมซั้งแม่ดวง</h5>
+<p>ขนมพื้นบ้านโบราณของชุมชนบางเหรียง</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="picture/ผักกาดดอง1.jpg">
+<div class="card-body text-center">
+<h5>ผักกาดดองสูตรโบราณ</h5>
+<p>ผักกาดดองรสชาติดั้งเดิมจากภูมิปัญญาท้องถิ่น</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card text-center">
+<img src="picture/ปลาส้ม1.jpg">
+<div class="card-body">
+<h5>ปลาส้ม บ้านโคกเมือง</h5>
+<p>ปลาสามน้ำจากทะเลสาบสงขลา นำมาแปรรูปโดยกลุ่มชุมชน</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="picture/ปลาแห้งแดดเดียว.jpg">
+<div class="card-body text-center">
+<h5>ปลาแห้งแดดเดียว</h5>
+<p>ของฝากและสินค้าแปรรูปจากปลาในทะเลสาบสงขลา</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<h1>เทศบาลตำบลบางเหรียง</h1>
+<p>15/4 หมู่.8 ต.บางเหรียง อ.ควนเนียง จ.สงขลา 90220 </p>
+<p>โทรศัพท์ : 074-5816412</p>
+<p>อีเมล์ : bangrieang@hotmail.com , saraban_05901301@dla.go.th</p>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
